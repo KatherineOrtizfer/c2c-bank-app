@@ -18,9 +18,13 @@ def gatekeeper(login):
 print(gatekeeper("admin"))
 
 # 4. How could this code be improved? Make it better. Think about what other scenarios you should cover in your if logic.
-
+# i think it could be improved by stating the login status, and maybe do login password.
 # 5. Complete the function called check_balance that takes one parameter, loan_balance.
 def check_balance(loan_balance):
+    if loan_balance = "0":
+      return "you don't owe any money"
+    if loan_balance < "0":
+        return
 # 6. If loan_balance is zero or more, it says “you don’t owe any money”
 # 7. If loan_balance is negative, it  says “you owe $X” where X is the amount
     return
