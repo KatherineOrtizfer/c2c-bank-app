@@ -10,7 +10,10 @@ login_types = ["admin", "user", "guest"]
 def gatekeeper(login):
   if login == "admin":
     return "You have the privileges"
-
+  if login == "user":
+    return "You have limited privileges"
+  if login =="guest":
+    return "You have no privileges"
 # 3. Call the gatekeeper function with a string and print what it returns.
 print(gatekeeper("admin"))
 
@@ -24,3 +27,4 @@ def check_balance(loan_balance):
 
 # 8. Call your function with a negative and positive number and print what it returns.
 print(check_balance(300))
+
